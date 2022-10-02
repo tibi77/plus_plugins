@@ -12,9 +12,6 @@ import 'package:integration_test/integration_test.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
-  final bool batteryLevelIsImplemented = Platform.isAndroid || Platform.isIOS;
-  final bool isInBatterySaveModeIsImplemented =
-      Platform.isAndroid || Platform.isIOS || Platform.isWindows;
 
   final bool batteryLevelIsImplemented = Platform.isAndroid || Platform.isMacOS;
   final bool batteryStateIsImplemented = Platform.isAndroid ||
