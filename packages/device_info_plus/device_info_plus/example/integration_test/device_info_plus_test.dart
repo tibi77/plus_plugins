@@ -117,7 +117,7 @@ void main() {
 
   testWidgets('Check all Linux info values are available',
       ((WidgetTester tester) async {
-    expect(linuxInfo.name, isNotNull));
+    expect(linuxInfo.name, isNotNull);
     expect(linuxInfo.version, isNotNull);
     expect(linuxInfo.id, isNotNull);
     expect(linuxInfo.idLike, isNotNull);
