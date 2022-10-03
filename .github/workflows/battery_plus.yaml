@@ -131,6 +131,8 @@ jobs:
         run: ./.github/workflows/scripts/install-flutter.sh stable
       - name: "Install Tools"
         run: ./.github/workflows/scripts/install-tools.sh
+      - name: "Install UPower"
+        run: sudo apt install upower
       - name: "Build Example"
         run: ./.github/workflows/scripts/build-examples.sh linux ./lib/main.dart
 
