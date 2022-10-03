@@ -124,9 +124,8 @@ void main() {
     expect(linuxInfo.versionCodename, isNotNull);
     expect(linuxInfo.versionId, isNotNull);
     expect(linuxInfo.prettyName, isNotNull);
-    expect(linuxInfo.buildId, isNotNull);
-    expect(linuxInfo.variant, isNotNull);
-    expect(linuxInfo.variantId, isNotNull);
-    expect(linuxInfo.machineId, isNotNull);
+    expect(linuxInfo.buildId, isNull);
+    expect(linuxInfo.variant, isNull);
+    expect(linuxInfo.variantId, isNull);
   }), skip: !Platform.isLinux);
 }
