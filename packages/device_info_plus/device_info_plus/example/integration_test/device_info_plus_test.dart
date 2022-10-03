@@ -117,13 +117,13 @@ void main() {
 
   testWidgets('Check all Linux info values are available',
       ((WidgetTester tester) async {
-    expect(linuxInfo.name, equals('Linux'));
-    expect(linuxInfo.version, isNull);
-    expect(linuxInfo.id, equals('linux'));
-    expect(linuxInfo.idLike, isNull);
-    expect(linuxInfo.versionCodename, isNull);
-    expect(linuxInfo.versionId, isNull);
-    expect(linuxInfo.prettyName, 'Linux');
+    expect(linuxInfo.name, equals('Ubuntu'));
+    expect(linuxInfo.version, "");
+    expect(linuxInfo.id, equals('ubuntu'));
+    expect(linuxInfo.idLike, "");
+    expect(linuxInfo.versionCodename, "");
+    expect(linuxInfo.versionId, "");
+    expect(linuxInfo.prettyName, 'Ubuntu');
     expect(linuxInfo.buildId, isNull);
     expect(linuxInfo.variant, isNull);
     expect(linuxInfo.variantId, isNull);
